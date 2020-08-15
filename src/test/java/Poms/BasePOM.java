@@ -29,4 +29,11 @@ public class BasePOM {
         driver.findElement(locator).clear();
         driver.findElement(locator).sendKeys(text);
     }
+    public void navigateTo(String name){
+        switch (name){
+            case"weborders":
+                driver.get("http://secure.smartbearsoftware.com/samples/TestComplete12/WebOrders/Login.aspx?ReturnUrl=%2fsamples%2fTestComplete12%2fWebOrders%2fDefault.aspx");
+                break;
+        }
+    }
 }
