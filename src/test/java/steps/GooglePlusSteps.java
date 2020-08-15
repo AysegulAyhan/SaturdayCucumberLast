@@ -23,7 +23,6 @@ public class GooglePlusSteps {
 
     @Then("^Appears GooglePlus login page$")
     public void appears_GooglePlus_login_page()  {
-        //Thread.sleep(2000);
         String mainWindow1 = driver.getWindowHandle();
         Set<String> twoWindow1 = driver.getWindowHandles();
         for (String handle1 : twoWindow1) {
@@ -32,9 +31,8 @@ public class GooglePlusSteps {
             }
         }
         Assert.assertTrue(driver.getCurrentUrl().contains("google"));
-        driver.close();
         driver.switchTo().window(mainWindow1);
-        page.waitAndClick(icons.logOut);
-        driver.quit();
+//        page.waitAndClick(icons.logOut);
+//        driver.quit();
     }
 }

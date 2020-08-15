@@ -32,9 +32,8 @@ public class YouTubeSteps {
             }
         }
         Assert.assertTrue(driver.getCurrentUrl().contains("youtube"));
-        driver.close();
         driver.switchTo().window(mainWindow1);
-        page.waitAndClick(icons.logOut);
+//        page.waitAndClick(icons.logOut);
 
     }
 }

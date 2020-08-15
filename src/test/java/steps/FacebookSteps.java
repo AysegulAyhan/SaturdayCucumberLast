@@ -29,8 +29,7 @@ public class FacebookSteps {
             driver.switchTo().window(handle);
         }
         Assert.assertTrue(driver.getCurrentUrl().contains("facebook"));
-        driver.close();
         driver.switchTo().window(mainWindow);
-        page.waitAndClick(icons.logOut);
+//        page.waitAndClick(icons.logOut);
     }
    }

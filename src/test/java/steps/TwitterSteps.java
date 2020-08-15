@@ -32,9 +32,8 @@ public class TwitterSteps {
             }
         }
         Assert.assertTrue(driver.getCurrentUrl().contains("twitter"));
-        driver.close();
         driver.switchTo().window(mainWindow1);
-        page.waitAndClick(icons.logOut);
+//        page.waitAndClick(icons.logOut);
 
     }
 }
