@@ -1,1 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
+.idea
+SaturdayCucumber2.iml
+target/generated-test-sources/
+target/test-classes/steps/AfterBeforeDefinition.class
+target/test-classes/steps/Replit1.class
