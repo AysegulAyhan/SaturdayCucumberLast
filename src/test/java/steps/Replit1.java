@@ -26,14 +26,12 @@ public class Replit1 {
         page.waitAndSendKeys(icon.loginInput,"Tester");
         page.waitAndSendKeys(icon.passwordInput,"test");
         page.waitAndClick(icon.loginButton);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".SampleTable")));
 
     }
 
-    @Then("^I am logged in and verify eight items$")
+    @Given("^I am logged in and verify eight items$")
     public void i_am_logged_in_and_verify_eight_items() throws InterruptedException {
-        Thread.sleep(2000);
-       // driver.switchTo().alert().accept();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".SampleTable")));
         List<WebElement> rows = icon.rows;
         Assert.assertEquals(rows.size(), 8);
         List<WebElement> checkBoxes = icon.checkBox;

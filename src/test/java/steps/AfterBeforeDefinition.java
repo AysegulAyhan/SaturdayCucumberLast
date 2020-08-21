@@ -7,9 +7,9 @@ import utils.BaseDriver;
 
 public class AfterBeforeDefinition {
 
-    @After
-    public void afterSuite() {
-        System.out.println("Ending scnerio!");
-        BaseDriver.quitDriver();
-    }
+//    @After
+//    public void afterSuite() {
+//        System.out.println("Ending scnerio!");
+//        BaseDriver.quitDriver();
+//    }
 }

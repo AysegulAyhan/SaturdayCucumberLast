@@ -34,6 +34,32 @@ public class SocialMediaPom extends BasePOM {
     @FindBy(css = "#ctl00_MainContent_orderLInk")
     public WebElement orderLink;
 
+    @FindBy(css = "#ctl00_menu>li:last-child")
+    public WebElement orderForm;
+    @FindBy(css = "#ctl00_MainContent_fmwOrder_ddlProduct")
+    public WebElement selectButton;
+    @FindBy(css = "#ctl00_MainContent_fmwOrder_txtQuantity")
+    public WebElement quantity;
+    @FindBy(css = "#ctl00_MainContent_fmwOrder_txtName")
+    public WebElement customerName;
+    @FindBy(css = "#ctl00_MainContent_fmwOrder_TextBox2")
+    public WebElement streetName;
+    @FindBy(css = "#ctl00_MainContent_fmwOrder_TextBox3")
+    public WebElement cityName;
+    @FindBy(css = "#ctl00_MainContent_fmwOrder_TextBox5")
+    public WebElement zipCode;
+    @FindBy(css = "#ctl00_MainContent_fmwOrder_TextBox4")
+    public WebElement state;
+    @FindBy(css = "#ctl00_MainContent_fmwOrder_cardList_1")
+    public WebElement masterCard;
+    @FindBy(css = "#ctl00_MainContent_fmwOrder_TextBox6")
+    public WebElement cardNo;
+    @FindBy(css = "#ctl00_MainContent_fmwOrder_TextBox1")
+    public WebElement cartDate;
+    @FindBy(css = "#ctl00_MainContent_fmwOrder_InsertButton")
+    public WebElement processButton;
+
+
     public WebElement clickPage(String pageName){
         WebElement element=null;
         switch (pageName){
